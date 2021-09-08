@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyGaragem</string>
+
+    <string name="motorista">Nome do motorista</string>
+    <string name="telefone">Telefone para contato</string>
+    <string name="carro">Nome do carro</string>
+    <string name="placa">Placa do carro</string>
+    <string name="vaga">vaga do carro</string>
+
+    <string name="bt_salvar">Salvar carro</string>
+    <string name="bt_atualizar">Atualizar Motorista</string>
+
+    <string name="txt_pago">Pago</string>
+</resources>

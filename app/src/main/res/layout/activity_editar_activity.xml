@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".editar_activity">
+
+    <TextView
+        android:id="@+id/txt_motorista"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/motorista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_nome_motorista"
+        style="@style/edit_add_edita_carro"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_motorista"/>
+
+    <TextView
+        android:id="@+id/txt_telefone"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/telefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome_motorista"/>
+
+    <EditText
+        android:id="@+id/edit_telefone"
+        style="@style/edit_add_edita_carro"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefone"/>
+
+    <TextView
+        android:id="@+id/txt_carro"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/carro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_telefone"/>
+
+    <EditText
+        android:id="@+id/edit_nome_carro"
+        style="@style/edit_add_edita_carro"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_carro"/>
+
+    <TextView
+        android:id="@+id/txt_placa"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/placa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome_carro"/>
+
+    <EditText
+        android:id="@+id/edit_placa_carro"
+        style="@style/edit_add_edita_carro"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_placa"/>
+
+    <TextView
+        android:id="@+id/txt_vaga"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/vaga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_placa_carro"/>
+
+    <EditText
+        android:id="@+id/edit_vaga"
+        style="@style/edit_add_edita_carro"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_vaga"/>
+
+    <TextView
+        android:id="@+id/txt_valor"
+        style="@style/txt_add_edita_carro"
+        android:text="@string/vaga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_vaga"/>
+
+    <EditText
+        android:id="@+id/edit_valor"
+        style="@style/edit_add_edita_carro"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_valor"/>
+
+
+    <Button
+        android:id="@+id/bt_salva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_atualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_valor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
